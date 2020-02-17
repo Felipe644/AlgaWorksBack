@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-class Categoria implements Serializable {
+public class Categoria implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
