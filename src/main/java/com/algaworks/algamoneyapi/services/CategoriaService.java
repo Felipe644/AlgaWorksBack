@@ -7,4 +7,6 @@ import java.util.List;
 public interface CategoriaService {
 
     List<CategoriaDTO> listarTodasCategorias();
+
+    void save(CategoriaDTO categoriaDTO);
 }
