@@ -8,7 +8,5 @@ public interface PessoaService {
 
     List<PessoaDTO> listarTodasPessoa();
 
-
-
     void save(PessoaDTO pessoaDTO);
 }
