@@ -29,10 +29,22 @@ public class CategoriaServiceImpl implements CategoriaService {
     }
 
     @Override
+    public CategoriaDTO findCategoria(Long id) {
+
+        Categoria categoria = categoriaRepository.findById(id).orElse(null);
+
+        return categoriaMapper.toDto(categoria);
+    }
+
+    @Override
     public void save(CategoriaDTO categoriaDTO) {
 
         categoriaRepository.save(categoriaMapper.toEntity(categoriaDTO));
     }
 
+    @Override
+    public void delete(Long id) {
 
+        categoriaRepository.deleteById(id);
+    }
 }

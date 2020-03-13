@@ -8,8 +8,9 @@ import java.io.Serializable;
 public class PessoaDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-
     private  String nome;
+
+    private Boolean ativo;
 
     @Embedded
     private Endereco endereco;
@@ -28,5 +29,13 @@ public class PessoaDTO implements Serializable {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
     }
 }

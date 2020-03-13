@@ -15,10 +15,10 @@ public class Pessoa implements Serializable {
 
     private  String nome;
 
+    private Boolean ativo;
+
     @Embedded
     private Endereco endereco;
-
-    private Boolean ativo;
 
     public Long getId() {
         return id;
@@ -42,6 +42,14 @@ public class Pessoa implements Serializable {
 
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
     @Override

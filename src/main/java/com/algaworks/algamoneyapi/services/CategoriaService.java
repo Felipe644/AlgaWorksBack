@@ -8,5 +8,9 @@ public interface CategoriaService {
 
     List<CategoriaDTO> listarTodasCategorias();
 
+    CategoriaDTO findCategoria(Long id);
+
     void save(CategoriaDTO categoriaDTO);
+
+    void delete(Long id);
 }
